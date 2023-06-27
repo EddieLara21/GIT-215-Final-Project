@@ -1,0 +1,242 @@
+/* FONTS 
+
+'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif 
+*/
+
+/* COLORS
+Xanthous: #E3B23C, 
+Barn Red: #6F1A07, 
+Night: #00100B, 
+Grey: #7E8287, 
+White: #FFFFFF
+*/
+
+/* Home Page CSS Starts */
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+body {
+    background-color: #00100B;
+    color: #e3b23c;
+    text-align: center;
+}
+
+header, footer {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 a{
+    color: #e3b23c;
+    padding-top: 50px;
+    text-decoration: none;
+    font-size: 60px;
+}
+
+nav {
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+li {
+    width: 1000px;
+    display: inline;
+    list-style-type: none;
+    padding: 12px;
+    margin: 80px;
+    border-radius: 12px;
+}
+
+li a{
+    color: #e3b23c;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px;
+    border: 2px solid #6F1A07;
+    border-radius: 5px;
+}
+
+li a:hover, #content a:hover{
+    color: #6F1A07;
+    background-color: #e3b23c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+#grid-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#content {
+    text-align: center;
+    margin: 20px;
+    width: 250px;
+    margin-right: 50px;
+    font-size: larger;
+    color: white;
+}
+
+#content a{
+    color: white;
+}
+
+div img {
+    width: 600px;
+    height: auto;
+}
+
+h3 {
+    font-size: larger;
+    font-weight: bold;
+    color: #e3b23c;
+}
+
+p {
+    color: white;
+}
+
+section {
+    width: 1280px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 10px double #6F1A07;
+    justify-content: center;
+    margin: auto;
+}
+
+section img {
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: grey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: .5;
+}
+
+/* Home Page CSS Ends */
+
+/* ----------------------------------------------------- */
+
+/* Contact Us CSS Begins*/
+#contact-container img {
+    width: 400px;
+    height: auto;
+}
+
+form {
+	width: 600px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #6F1A07;
+	padding: 20px;
+	color: white;
+	border-radius: 8px;
+}
+
+input,  label, select, textarea {
+	display: inline-block;
+	width: 400px;
+    margin: auto;
+}
+
+label {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+input, select, textarea {
+	padding: 10px;
+	margin-bottom: 12px;
+	border-radius: 8px;
+	border: inset 3px #6F1A07;
+}
+
+fieldset {
+	margin-bottom: 12px;
+	border-color: #e3b23c; 
+	border-radius: 20px;
+	display: grid;
+	
+	grid-template-columns: 1fr;
+	grid-template-rows: 8px;
+}
+
+legend {
+	font-weight: bold;
+    text-align: left;
+    color: #e3b23c;
+}
+
+input[type=submit] {
+	background: #e3b23c;
+	border: solid 6px #e3b23c;
+	color: #00100B;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+input:focus, select:focus, textarea:focus {
+	outline: 3px solid #e3b23c;
+}
+
+input[type="submit"]:focus{
+	outline:3px solid red;
+}
+
+input[type="submit"]:hover{
+    background-color: #b99131;
+	border: inset 6px #e3b23c;
+}
+
+input[type=radio] + label {
+    cursor: pointer;
+ display: flex;
+    align-items: center;
+}
+
+input[type=radio] {
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 0;
+    border-radius: 0;
+}
+
+input[type=radio] + label::before {
+   	content: "\00a0";  
+	font-size: 20px;
+	line-height: 0.5;
+   	border-radius: 50%;
+   	display: inline-block;  
+   	height: 20px;
+   	width: 22px;
+   	margin-right: 16px;
+   	border: 2px solid #00100B;  
+   	background-color: #fff;
+	padding-bottom: 2px;
+}
+
+input[type=radio]:checked + label::before {
+   	content: "\2022";
+   	color: #00100B;
+   	background: #e3b23c;
+}
+
+input[type=radio]:focus{
+	outline: none;
+}
